@@ -1,0 +1,90 @@
+{
+  "brand": "Little Light Kids™",
+  "purpose": "Seed registry for known Little Light Kids characters. This is source-of-truth starter data, not final production schema.",
+  "characters": [
+    {
+      "id": "king-light",
+      "name": "King Light",
+      "role": "mentor",
+      "description": "Represents Jesus as the Light who comforts, strengthens, guides, and teaches children to choose truth.",
+      "traits": ["loving", "safe", "strong", "truthful"],
+      "approved_themes": ["courage", "peace", "truth", "forgiveness", "identity"],
+      "asset_reference": "character_references/King_Light_Reference.png",
+      "approval_status": "approved_seed"
+    },
+    {
+      "id": "zeke",
+      "name": "Zeke",
+      "role": "child_protagonist",
+      "description": "A brave child who learns to stand in faith, choose the light, and trust King Light when others laugh or pressure him.",
+      "traits": ["brave", "tender", "faithful", "honest", "forgiving"],
+      "approved_themes": ["bravery", "peer pressure", "standing for faith", "kindness", "forgiveness"],
+      "asset_reference": "character_references/Zeke_Master_Reference.png",
+      "approval_status": "approved_seed"
+    },
+    {
+      "id": "the-whisper",
+      "name": "The Whisper",
+      "role": "pressure_character",
+      "description": "A kid-safe picture of lies, fear, pressure, and discouragement that loses power when children choose truth and the light of Jesus.",
+      "traits": ["pressuring", "quiet"],
+      "approved_themes": ["discernment", "resisting lies", "choosing truth"],
+      "asset_reference": "character_references/Whisper_Reference.png",
+      "approval_status": "approved_seed"
+    },
+    {
+      "id": "jude",
+      "name": "Jude",
+      "role": "child_character",
+      "description": "Reminds kids that brave is not the absence of fear.",
+      "traits": ["brave", "steadfast"],
+      "approved_themes": ["courage", "standing firm"],
+      "approval_status": "known_from_assets"
+    },
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "child_character",
+      "description": "Learns that real influence means leading others toward what is good and true.",
+      "traits": ["leader", "influential", "teachable"],
+      "approved_themes": ["leadership", "influence", "friendship"],
+      "approval_status": "known_from_assets"
+    },
+    {
+      "id": "nia",
+      "name": "Nia",
+      "role": "child_character",
+      "description": "Shows that kindness can be strong.",
+      "traits": ["kind", "strong", "gentle"],
+      "approved_themes": ["kindness", "strength", "friendship"],
+      "approval_status": "known_from_assets"
+    },
+    {
+      "id": "sunny",
+      "name": "Sunny",
+      "role": "child_character",
+      "description": "Helps kids choose joy.",
+      "traits": ["joyful", "bright", "encouraging"],
+      "approved_themes": ["joy", "gratitude", "hope"],
+      "approval_status": "known_from_assets"
+    },
+    {
+      "id": "toby",
+      "name": "Toby",
+      "role": "child_character",
+      "description": "A child who may act out from hurt but can be reached through grace, kindness, and forgiveness.",
+      "traits": ["hurting", "restorable", "teachable"],
+      "approved_themes": ["forgiveness", "restoration", "kindness"],
+      "approval_status": "known_from_assets"
+    },
+    {
+      "id": "grace",
+      "name": "Grace",
+      "role": "child_character",
+      "description": "Gentle and prayerful. Her trust in God steadies the kids around her.",
+      "traits": ["prayerful", "gentle", "steady"],
+      "approved_themes": ["prayer", "trust", "peace"],
+      "approval_status": "known_from_assets"
+    }
+  ]
+}
