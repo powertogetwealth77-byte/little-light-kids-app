@@ -1,0 +1,47 @@
+name: Little Light Kids CI
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: llk-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Lint, test, and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify application baseline exists
+        shell: bash
+        run: |
+          test -f package.json || { echo "package.json is missing; Lovable baseline migration is incomplete."; exit 1; }
+          test -d src || { echo "src/ is missing; Lovable baseline migration is incomplete."; exit 1; }
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies reproducibly
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test
+
+      - name: Production build
+        run: npm run build
